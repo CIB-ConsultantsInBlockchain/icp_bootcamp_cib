@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "metamuseum_backend": {
+      "main": "src/metamuseum_backend/main.mo",
+      "type": "motoko"
+    },
+    "metamuseum_frontend": {
+      "dependencies": [
+        "metamuseum_backend"
+      ],
+      "source": [
+        "src/metamuseum_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "metamuseum_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
